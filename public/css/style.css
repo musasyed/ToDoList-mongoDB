@@ -1,0 +1,56 @@
+body{
+    margin: 0px auto;
+    width: 90%;
+    
+}
+.nav{
+    background-color: blue;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 90%;
+    margin: 0px auto;
+}
+.content{
+    margin: 5px auto;
+    /* background-color: #333; */
+    width: 70%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+}
+h3{
+    text-align: center;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    
+    padding: 20px 100px;
+    
+}
+ul li{
+    list-style: none;
+    margin: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+label.checkbox input[type="checkbox"]:checked + span {
+    text-decoration: line-through;
+    color: #888; /* Adjust the color as needed */
+  }
+
+footer {
+    background-color: #333; /* Set your preferred background color */
+    color: #fff; /* Set your preferred text color */
+    text-align: center;
+    padding: 10px;
+    /* position: absolute; */
+    bottom: 0;
+    width: 90%;
+    margin: 40px auto;
+  }

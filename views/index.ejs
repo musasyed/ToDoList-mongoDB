@@ -1,0 +1,35 @@
+<!-- Adding Header -->
+<%- include("partials/header.ejs") %>
+
+<div class="content">
+    <p>Now Schedule Your Task with this application</p>
+    <h1><%= listTitle %></h1>
+    <ul class="box">
+        <h3>Daily Tasks</h3>
+
+          <!-- For Each Method is better than for loop -->
+<% listItem.forEach(element => {%>
+    <li>
+        <label class="checkbox">
+        <form action="/delete" method="post">
+        <input type="checkbox" name="checkbox" value="<%= element._id %>" onchange="this.form.submit()">
+        <span><%=element.name%></span>
+        <input type="hidden" name="listName" value="<%=listTitle%>"></input>
+        
+    </form>
+    </label>
+    </li>
+<% }); %> 
+
+            
+    </ul>
+    <form action="/" method="post">
+        <input type="text" name="newItem" autocomplete="off" value="">
+        <button  type="submit"  name="list" value=<%=listTitle%>>Add</button>
+    </form>
+</div>
+
+
+<!-- Adding Footer -->
+<%- include("partials/footer.ejs") %>
+                    <!-- listItem[i]  -->
